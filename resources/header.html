@@ -1,0 +1,16 @@
+{{#username}}
+Welcome, {{username}}!<br>
+
+{{^username}}
+<form action="login" method="post">
+    <input type="text" placeholder="Username" name="username"/>
+    <input type="text" placeholder="Password" name="password"/>
+    <button type="submit">Login or Create Account</button>
+</form>
+{{/username}}
+
+{{username}}
+<form action="go-to" method="post">  <!-- Go to Golf Bag -->
+    <button type="Submit">Go to Bag</button>
+</form>
+{{/username}}

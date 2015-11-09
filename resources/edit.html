@@ -1,0 +1,71 @@
+<html>
+<body>
+{{> header}}
+
+<h2>Please enter your updated bag</h2>
+
+
+<form action="edit-clubs" method="post">
+
+{{#golf}}
+
+<h2>{{username}}'s Golf Bag</h2>
+
+
+<h4>{{driver}}</h4><br>
+    <select name="driver">
+        <option value="taylormade">TaylorMade</option>
+        <option value="nike">Nike</option>
+        <option value="titleist">Titleist</option>
+        <option value="mizuno">Mizuno</option>
+        <option value="ping">Ping</option>
+    </select>
+
+
+<h4>{{irons}}</h4><br>
+    <select name="irons">
+        <option value="taylormade">TaylorMade</option>
+        <option value="nike">Nike</option>
+        <option value="titleist">Titleist</option>
+        <option value="mizuno">Mizuno</option>
+        <option value="ping">Ping</option>
+    </select>
+
+
+<h4>{{wedge}}</h4><br>
+    <select name="wedges">
+        <option value="taylormade">TaylorMade</option>
+        <option value="nike">Nike</option>
+        <option value="titleist">Titleist</option>
+        <option value="mizuno">Mizuno</option>
+        <option value="ping">Ping</option>
+    </select>
+
+
+<h4>{{putter}}</h4><br>
+    <select name="putter">
+        <option value="taylormade">TaylorMade</option>
+        <option value="nike">Nike</option>
+        <option value="titleist">Titleist</option>
+        <option value="mizuno">Mizuno</option>
+        <option value="ping">Ping</option>
+    </select>
+
+
+<h4>{{ball}}</h4><br>
+    <select name="ball">
+        <option value="taylormade">TaylorMade</option>
+        <option value="nike">Nike</option>
+        <option value="titleist">Titleist</option>
+    </select>
+
+{{/golf}}
+
+    <br>
+    <br>
+    <button type="submit">Submit Updated Bag</button>
+</form>
+
+
+</body>
+</html>

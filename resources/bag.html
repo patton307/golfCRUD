@@ -1,0 +1,25 @@
+<html>
+<body>
+{{> header}}
+
+{{#golf}}
+
+<h2>{{username}}'s Golf Bag</h2>
+
+<h4>{{driver}}</h4><br>
+<h4>{{irons}}</h4><br>
+<h4>{{wedge}}</h4><br>
+<h4>{{putter}}</h4><br>
+<h4>{{ball}}</h4><br>
+
+{{/golf}}
+
+<a href="home.html">Back to Home</a>
+
+<form action="go-to-edit" method="post">  <!-- edit golf bag -->
+    <button type="submit">Edit Bag</button>
+</form>
+
+
+</body>
+</html>
